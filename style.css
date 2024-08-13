@@ -35,7 +35,7 @@
     font-family: "Lato", Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
     font-display: swap;
-    color: #868686;
+    color: #868686; /* todo: definir variáveis para cores */
 }
 
 body {
@@ -46,7 +46,7 @@ body {
 
 nav {
     padding-block: 1rem;
-    background-color: #243548;
+    background-color: #243548; /* todo: definir variáveis para cores */
     display: flex;
     justify-content: center;
     position: relative;
@@ -71,7 +71,7 @@ nav div {
     display: flex;
     gap: 1rem;
     flex-direction: column;
-    background-color: #243548;
+    background-color: #243548; /* todo: definir variáveis para cores */
     overflow: hidden;
 }
 
@@ -83,7 +83,7 @@ nav div a{
     text-decoration: none;
     display: none;
     font-size: medium;
-    color: #BEB081;
+    color: #BEB081; /* todo: definir variáveis para cores */
 }
 
 nav div a:last-of-type{
@@ -91,20 +91,20 @@ nav div a:last-of-type{
 }
 
 h1 {
-    color: #BEB081;
+    color: #BEB081; /* todo: definir variáveis para cores */
     text-align: center;
     font-weight: bold;
     font-size: medium;
 }
 
 h2 {
-    color: #A0915F;
+    color: #A0915F; /* todo: definir variáveis para cores */
     font-size: medium;
     font-weight: bold;
 }
 
 .golden-border {
-    border: 2px solid #BEB081;
+    border: 2px solid #BEB081; /* todo: definir variáveis para cores */
     padding: 1rem 2rem;
 }
 
@@ -144,7 +144,7 @@ section#politicas {
 }
 
 main {
-    border-top: 4px solid #A0915F;
+    border-top: 4px solid #A0915F; /* todo: definir variáveis para cores */
     display: flex;
     flex-direction: column;
 }
@@ -222,7 +222,7 @@ main.contato span:last-of-type {
 }
 
 main.contato span a{
-    color: #0070E0;
+    color: #0070E0; /* todo: definir variáveis para cores */
 }
 
 main.politicas ul {
@@ -255,7 +255,7 @@ footer {
 }
 
 footer span {
-    color: white;
+    color: white; /* todo: definir variáveis para cores */
 }
 
 footer img {
