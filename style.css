@@ -1,3 +1,12 @@
+:root {
+    --azul: #0070E0;
+    --azul-escuro: #243548;
+    --branco: #FFFFFF;
+    --cinza: #868686;
+    --dorado: #BEB081;
+    --dorado-escuro: #A0915F;
+}
+
 @font-face {
     font-family: 'Lato';
     src: url('./assets/fonts/Lato-Regular.ttf');
@@ -35,7 +44,7 @@
     font-family: "Lato", Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
     font-display: swap;
-    color: #868686; /* todo: definir variáveis para cores */
+    color: var(--cinza);
 }
 
 body {
@@ -46,7 +55,7 @@ body {
 
 nav {
     padding-block: 1rem;
-    background-color: #243548; /* todo: definir variáveis para cores */
+    background-color: var(--azul-escuro);
     display: flex;
     justify-content: center;
     position: relative;
@@ -60,7 +69,8 @@ nav i {
     position: absolute;
     font-size: 32px;
     right: 32px;
-    top: calc(50% - 16px)
+    top: calc(50% - 16px);
+    color: var(--dorado);
 }
 
 nav div {
@@ -71,7 +81,7 @@ nav div {
     display: flex;
     gap: 1rem;
     flex-direction: column;
-    background-color: #243548; /* todo: definir variáveis para cores */
+    background-color: var(--azul-escuro);
     overflow: hidden;
 }
 
@@ -83,7 +93,7 @@ nav div a{
     text-decoration: none;
     display: none;
     font-size: medium;
-    color: #BEB081; /* todo: definir variáveis para cores */
+    color: var(--dorado);
 }
 
 nav div a:last-of-type{
@@ -91,20 +101,20 @@ nav div a:last-of-type{
 }
 
 h1 {
-    color: #BEB081; /* todo: definir variáveis para cores */
+    color: var(--dorado);
     text-align: center;
     font-weight: bold;
     font-size: medium;
 }
 
 h2 {
-    color: #A0915F; /* todo: definir variáveis para cores */
+    color: var(--dorado-escuro);
     font-size: medium;
     font-weight: bold;
 }
 
 .golden-border {
-    border: 2px solid #BEB081; /* todo: definir variáveis para cores */
+    border: 2px solid var(--dorado);
     padding: 1rem 2rem;
 }
 
@@ -144,7 +154,7 @@ section#politicas {
 }
 
 main {
-    border-top: 4px solid #A0915F; /* todo: definir variáveis para cores */
+    border-top: 4px solid var(--dorado-escuro);
     display: flex;
     flex-direction: column;
 }
@@ -216,13 +226,20 @@ main.contato h2 {
 main.contato span:first-of-type {
     padding-top: 0.5rem;
 }
+main.contato span:first-of-type i{
+    color: var(--azul);
+}
 
 main.contato span:last-of-type {
     padding-bottom: 0.5rem;
 }
 
+main.contato span:last-of-type {
+    color: var(--dorado-escuro);
+}
+
 main.contato span a{
-    color: #0070E0; /* todo: definir variáveis para cores */
+    color: var(--azul);
 }
 
 main.politicas ul {
@@ -255,7 +272,7 @@ footer {
 }
 
 footer span {
-    color: white; /* todo: definir variáveis para cores */
+    color: var(--branco);
 }
 
 footer img {
