@@ -61,6 +61,9 @@
 }
 
 body {
+    /*Primeiro min-height serve como fallback para caso os restantes não funcionem*/
+    min-height: 100%;
+    min-height: 100vh;
     min-height: 100dvh;
     display: flex;
     flex-direction: column;
@@ -95,6 +98,8 @@ nav div {
     gap: 1rem;
     flex-direction: column;
     overflow: hidden;
+    /* Necessário para menu mobile */
+    background-color: var(--navbar-bg);
 }
 
 .closed {
@@ -140,7 +145,6 @@ h2 {
 
 section#inicial {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("./assets/hero.png");
-    height: 200px;
 }
 
 section#inicial h1 {
@@ -148,11 +152,11 @@ section#inicial h1 {
     -webkit-backdrop-filter: blur(10px);
 }
 
-section#sobre {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("./assets/sobre.png");
+section#equipe {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("./assets/equipe.png");
 }
 
-section#investimentos {
+section#propostas {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("./assets/produtos.png");
 }
 
@@ -167,7 +171,8 @@ section#politicas {
 main {
     border-top: 4px solid var(--main-border);
     display: flex;
-    flex-direction: column;
+    flex-grow: 1;
+    flex-direction: column; 
 }
 
 main.inicial {
@@ -184,13 +189,13 @@ main.inicial div {
     gap: 0.5rem;
 }
 
-main.sobre {
+main.equipe {
     padding: 2rem;
     padding-top: 1rem;
     gap: 1rem;
 }
 
-main.sobre div.info {
+main.equipe div.info {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -198,7 +203,7 @@ main.sobre div.info {
     text-align: justify;
 }
 
-main.sobre div.equipe {
+main.equipe div.equipe {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -206,16 +211,16 @@ main.sobre div.equipe {
     text-align: justify;
 }
 
-main.sobre div.equipe h2 {
+main.equipe div.equipe h2 {
     margin-bottom: 1rem;
 }
 
-main.investimentos {
+main.propostas {
     padding: 0.75rem;
     gap: 0.75rem;
 }
 
-main.investimentos img {
+main.propostas img {
     width: 100%;
 }
 
@@ -255,8 +260,13 @@ main.contato span a {
     color: var(--links);
 }
 
-main.politicas ul {
+main.politicas {
     padding: 2rem;
+    display: grid;
+}
+
+main.politicas ul {
+    padding-block: 1rem 2rem;
     list-style: inside;
 }
 
@@ -275,7 +285,6 @@ main.politicas i {
 
 footer {
     background-image: url("./assets/footer.jpg");
-    margin-top: auto;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -324,16 +333,20 @@ footer img {
     }
 
     .hero {
-        height: 250px !important;
+        height: 250px;
     }
 
     h1 {
         font-size: 1.25rem;
     }
 
+    section#inicial {
+        height: 40vh;
+    }
+
     main.inicial {
         flex-direction: row;
-        flex-grow: 0.6;
+        flex-grow: 1;
         align-items: center;
     }
 
@@ -341,16 +354,21 @@ footer img {
         font-size: 1.2rem;
     }
 
-    main.sobre {
+    main.equipe {
         padding-inline: 12rem;
     }
 
-    main.investimentos {
+    main.propostas {
         align-items: center;
     }
 
-    main.investimentos img {
+    main.propostas img {
         width: 60%;
+    }
+
+    main.politicas {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
     }
 
     main.contato {
