@@ -3,8 +3,21 @@
     --azul-escuro: #243548;
     --branco: #FFFFFF;
     --cinza: #868686;
-    --dorado: #BEB081;
-    --dorado-escuro: #A0915F;
+    --dourado: #BEB081;
+    --dourado-escuro: #A0915F;
+
+    --border: var(--dourado);
+    --email-icon: var(--doudrado-escuro);
+    --footer-txt: var(--branco);
+    --linkedin-icon: var(--azul);
+    --links: var(--azul);
+    --main-border: var(--dourado-escuro);
+    --menu-icon: var(--dourado);
+    --navbar-bg: var(--azul-escuro);
+    --navbar-links: var(--dourado);
+    --titulo-princ: var(--dourado);
+    --titulo-sec: var(--dourado-escuro);
+    --txt-base: var(--cinza);
 }
 
 @font-face {
@@ -44,7 +57,7 @@
     font-family: "Lato", Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
     font-display: swap;
-    color: var(--cinza);
+    color: var(--txt-base);
 }
 
 body {
@@ -55,7 +68,7 @@ body {
 
 nav {
     padding-block: 1rem;
-    background-color: var(--azul-escuro);
+    background-color: var(--navbar-bg);
     display: flex;
     justify-content: center;
     position: relative;
@@ -70,7 +83,7 @@ nav i {
     font-size: 32px;
     right: 32px;
     top: calc(50% - 16px);
-    color: var(--dorado);
+    color: var(--menu-icon);
 }
 
 nav div {
@@ -81,7 +94,6 @@ nav div {
     display: flex;
     gap: 1rem;
     flex-direction: column;
-    background-color: var(--azul-escuro);
     overflow: hidden;
 }
 
@@ -93,7 +105,7 @@ nav div a{
     text-decoration: none;
     display: none;
     font-size: medium;
-    color: var(--dorado);
+    color: var(--navbar-links);
 }
 
 nav div a:last-of-type{
@@ -101,20 +113,20 @@ nav div a:last-of-type{
 }
 
 h1 {
-    color: var(--dorado);
+    color: var(--titulo-princ);
     text-align: center;
     font-weight: bold;
     font-size: medium;
 }
 
 h2 {
-    color: var(--dorado-escuro);
+    color: var(--titulo-sec);
     font-size: medium;
     font-weight: bold;
 }
 
 .golden-border {
-    border: 2px solid var(--dorado);
+    border: 2px solid var(--border);
     padding: 1rem 2rem;
 }
 
@@ -154,7 +166,7 @@ section#politicas {
 }
 
 main {
-    border-top: 4px solid var(--dorado-escuro);
+    border-top: 4px solid var(--main-border);
     display: flex;
     flex-direction: column;
 }
@@ -227,7 +239,7 @@ main.contato span:first-of-type {
     padding-top: 0.5rem;
 }
 main.contato span:first-of-type i{
-    color: var(--azul);
+    color: var(--linkedin-icon);
 }
 
 main.contato span:last-of-type {
@@ -235,11 +247,11 @@ main.contato span:last-of-type {
 }
 
 main.contato span:last-of-type {
-    color: var(--dorado-escuro);
+    color: var(--email-icon);
 }
 
 main.contato span a{
-    color: var(--azul);
+    color: var(--links);
 }
 
 main.politicas ul {
@@ -272,7 +284,7 @@ footer {
 }
 
 footer span {
-    color: var(--branco);
+    color: var(--footer-txt);
 }
 
 footer img {
