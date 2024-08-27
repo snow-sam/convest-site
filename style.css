@@ -1,3 +1,25 @@
+:root {
+    --azul: #0070E0;
+    --azul-escuro: #243548;
+    --branco: #FFFFFF;
+    --cinza: #868686;
+    --dourado: #BEB081;
+    --dourado-escuro: #A0915F;
+
+    --border: var(--dourado);
+    --email-icon: var(--dourado-escuro);
+    --footer-txt: var(--branco);
+    --linkedin-icon: var(--azul);
+    --links: var(--azul);
+    --main-border: var(--dourado-escuro);
+    --menu-icon: var(--dourado);
+    --navbar-bg: var(--azul-escuro);
+    --navbar-links: var(--dourado);
+    --titulo-princ: var(--dourado);
+    --titulo-sec: var(--dourado-escuro);
+    --txt-base: var(--cinza);
+}
+
 @font-face {
     font-family: 'Lato';
     src: url('./assets/fonts/Lato-Regular.ttf');
@@ -35,7 +57,7 @@
     font-family: "Lato", Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
     font-display: swap;
-    color: #868686;
+    color: var(--txt-base);
 }
 
 body {
@@ -46,7 +68,7 @@ body {
 
 nav {
     padding-block: 1rem;
-    background-color: #243548;
+    background-color: var(--navbar-bg);
     display: flex;
     justify-content: center;
     position: relative;
@@ -60,7 +82,8 @@ nav i {
     position: absolute;
     font-size: 32px;
     right: 32px;
-    top: calc(50% - 16px)
+    top: calc(50% - 16px);
+    color: var(--menu-icon);
 }
 
 nav div {
@@ -71,7 +94,6 @@ nav div {
     display: flex;
     gap: 1rem;
     flex-direction: column;
-    background-color: #243548;
     overflow: hidden;
 }
 
@@ -79,32 +101,32 @@ nav div {
     height: 0;
 }
 
-nav div a{
+nav div a {
     text-decoration: none;
     display: none;
     font-size: medium;
-    color: #BEB081;
+    color: var(--navbar-links);
 }
 
-nav div a:last-of-type{
+nav div a:last-of-type {
     margin-bottom: 2rem;
 }
 
 h1 {
-    color: #BEB081;
+    color: var(--titulo-princ);
     text-align: center;
     font-weight: bold;
     font-size: medium;
 }
 
 h2 {
-    color: #A0915F;
+    color: var(--titulo-sec);
     font-size: medium;
     font-weight: bold;
 }
 
 .golden-border {
-    border: 2px solid #BEB081;
+    border: 2px solid var(--border);
     padding: 1rem 2rem;
 }
 
@@ -117,34 +139,33 @@ h2 {
 }
 
 section#inicial {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("./assets/hero.png");
-    background-size: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("./assets/hero.png");
     height: 200px;
 }
 
 section#inicial h1 {
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 section#sobre {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url("./assets/sobre.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("./assets/sobre.png");
 }
 
 section#investimentos {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("./assets/produtos.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("./assets/produtos.png");
 }
 
 section#contato {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("./assets/contato.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("./assets/contato.jpg");
 }
 
 section#politicas {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("./assets/nossosprodutos.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("./assets/nossosprodutos.jpg");
 }
 
 main {
-    border-top: 4px solid #A0915F;
+    border-top: 4px solid var(--main-border);
     display: flex;
     flex-direction: column;
 }
@@ -194,7 +215,7 @@ main.investimentos {
     gap: 0.75rem;
 }
 
-main.investimentos img{
+main.investimentos img {
     width: 100%;
 }
 
@@ -202,6 +223,7 @@ main.contato {
     gap: 0.5rem;
     padding: 2rem;
 }
+
 main.contato div {
     display: flex;
     flex-direction: column;
@@ -217,12 +239,20 @@ main.contato span:first-of-type {
     padding-top: 0.5rem;
 }
 
+main.contato span:first-of-type i {
+    color: var(--linkedin-icon);
+}
+
 main.contato span:last-of-type {
     padding-bottom: 0.5rem;
 }
 
-main.contato span a{
-    color: #0070E0;
+main.contato span:last-of-type i {
+    color: var(--email-icon);
+}
+
+main.contato span a {
+    color: var(--links);
 }
 
 main.politicas ul {
@@ -255,7 +285,7 @@ footer {
 }
 
 footer span {
-    color: white;
+    color: var(--footer-txt);
 }
 
 footer img {
@@ -271,9 +301,11 @@ footer img {
         justify-content: space-between;
         padding-inline: 2rem;
     }
+
     nav i {
         display: none !important;
     }
+
     nav div {
         display: flex;
         align-items: center;
@@ -305,7 +337,7 @@ footer img {
         align-items: center;
     }
 
-    main.inicial h2{
+    main.inicial h2 {
         font-size: 1.2rem;
     }
 
