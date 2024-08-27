@@ -8,8 +8,8 @@ btn.onclick = () => {
         lista.classList.remove("closed")
         links.forEach(link => link.style.display = "inline-block")
     } else {
-        links.forEach(link => link.style.display = "none")
         lista.classList.add("closed")
+        links.forEach(link => link.style.display = "none")
     }
     active = !active
 }
