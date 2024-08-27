@@ -7,7 +7,7 @@
     --dourado-escuro: #A0915F;
 
     --border: var(--dourado);
-    --email-icon: var(--doudrado-escuro);
+    --email-icon: var(--dourado-escuro);
     --footer-txt: var(--branco);
     --linkedin-icon: var(--azul);
     --links: var(--azul);
@@ -101,14 +101,14 @@ nav div {
     height: 0;
 }
 
-nav div a{
+nav div a {
     text-decoration: none;
     display: none;
     font-size: medium;
     color: var(--navbar-links);
 }
 
-nav div a:last-of-type{
+nav div a:last-of-type {
     margin-bottom: 2rem;
 }
 
@@ -215,7 +215,7 @@ main.investimentos {
     gap: 0.75rem;
 }
 
-main.investimentos img{
+main.investimentos img {
     width: 100%;
 }
 
@@ -223,6 +223,7 @@ main.contato {
     gap: 0.5rem;
     padding: 2rem;
 }
+
 main.contato div {
     display: flex;
     flex-direction: column;
@@ -237,7 +238,8 @@ main.contato h2 {
 main.contato span:first-of-type {
     padding-top: 0.5rem;
 }
-main.contato span:first-of-type i{
+
+main.contato span:first-of-type i {
     color: var(--linkedin-icon);
 }
 
@@ -245,11 +247,11 @@ main.contato span:last-of-type {
     padding-bottom: 0.5rem;
 }
 
-main.contato span:last-of-type {
+main.contato span:last-of-type i {
     color: var(--email-icon);
 }
 
-main.contato span a{
+main.contato span a {
     color: var(--links);
 }
 
@@ -299,9 +301,11 @@ footer img {
         justify-content: space-between;
         padding-inline: 2rem;
     }
+
     nav i {
         display: none !important;
     }
+
     nav div {
         display: flex;
         align-items: center;
@@ -333,7 +337,7 @@ footer img {
         align-items: center;
     }
 
-    main.inicial h2{
+    main.inicial h2 {
         font-size: 1.2rem;
     }
 
