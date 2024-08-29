@@ -157,7 +157,7 @@ section#equipe {
 }
 
 section#propostas {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("./assets/produtos.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("./assets/propostas.png");
 }
 
 section#contato {
@@ -165,14 +165,14 @@ section#contato {
 }
 
 section#politicas {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("./assets/nossosprodutos.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("./assets/politicas.jpg");
 }
 
 main {
     border-top: 4px solid var(--main-border);
     display: flex;
     flex-grow: 1;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 main.inicial {
