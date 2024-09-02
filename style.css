@@ -153,7 +153,7 @@ section#equipe {
 }
 
 section#propostas {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("./assets/produtos.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("./assets/propostas.webp");
 }
 
 section#contato {
@@ -161,7 +161,7 @@ section#contato {
 }
 
 section#politicas {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("./assets/nossosprodutos.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("./assets/politicas.webp");
 }
 
 main {
