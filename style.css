@@ -2,17 +2,14 @@
     --azul: #0070E0;
     --azul-escuro: #243548;
     --branco: #FFFFFF;
-    --cinza: #868686;
+    --cinza: #555555;
     --dourado: #BEB081;
-    --dourado-escuro: #A0915F;
+    --dourado-escuro: #605639;
 
     --border: var(--dourado);
-    --email-icon: var(--dourado-escuro);
     --footer-txt: var(--branco);
-    --linkedin-icon: var(--azul);
     --links: var(--azul);
     --main-border: var(--dourado-escuro);
-    --menu-icon: var(--dourado);
     --navbar-bg: var(--azul-escuro);
     --navbar-links: var(--dourado);
     --titulo-princ: var(--dourado);
@@ -24,30 +21,35 @@
     font-family: 'Lato';
     src: url('./assets/fonts/Lato-Regular.ttf');
     font-weight: 400;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Lato';
     src: url('./assets/fonts/Lato-Black.ttf');
     font-weight: 900;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Lato';
     src: url('./assets/fonts/Lato-Bold.ttf');
     font-weight: 700;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Lato';
     src: url('./assets/fonts/Lato-Light.ttf');
     font-weight: 300;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Lato';
     src: url('./assets/fonts/Lato-Thin.ttf');
     font-weight: 100;
+    font-display: swap;
 }
 
 * {
@@ -56,7 +58,6 @@
     box-sizing: border-box;
     font-family: "Lato", Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
-    font-display: swap;
     color: var(--txt-base);
 }
 
@@ -77,16 +78,11 @@ nav {
     position: relative;
 }
 
-nav img {
-    height: 36px;
-}
 
 nav i {
     position: absolute;
-    font-size: 32px;
     right: 32px;
     top: calc(50% - 16px);
-    color: var(--menu-icon);
 }
 
 nav div {
@@ -144,7 +140,7 @@ h2 {
 }
 
 section#inicial {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("./assets/hero.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("./assets/hero.webp");
 }
 
 section#inicial h1 {
@@ -153,19 +149,19 @@ section#inicial h1 {
 }
 
 section#equipe {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("./assets/equipe.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("./assets/equipe.webp");
 }
 
 section#propostas {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("./assets/propostas.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("./assets/propostas.webp");
 }
 
 section#contato {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("./assets/contato.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("./assets/contato.webp");
 }
 
 section#politicas {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("./assets/politicas.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("./assets/politicas.webp");
 }
 
 main {
@@ -201,6 +197,7 @@ main.equipe div.info {
     gap: 1rem;
     padding: 1rem;
     text-align: justify;
+    font-weight: bold;
 }
 
 main.equipe div.equipe {
@@ -240,24 +237,21 @@ main.contato h2 {
     margin-bottom: 1rem;
 }
 
-main.contato span:first-of-type {
-    padding-top: 0.5rem;
+main.contato span {
+    margin-block: 0.5rem;
 }
 
-main.contato span:first-of-type i {
-    color: var(--linkedin-icon);
+main.contato span:first-of-type {
+    margin-top: 0.5rem;
 }
 
 main.contato span:last-of-type {
     padding-bottom: 0.5rem;
 }
 
-main.contato span:last-of-type i {
-    color: var(--email-icon);
-}
-
 main.contato span a {
     color: var(--links);
+    margin-left: 0.5rem;
 }
 
 main.politicas {
@@ -284,7 +278,7 @@ main.politicas i {
 }
 
 footer {
-    background-image: url("./assets/footer.jpg");
+    background-image: url("./assets/footer.webp");
     width: 100%;
     display: flex;
     justify-content: center;
@@ -295,10 +289,6 @@ footer {
 
 footer span {
     color: var(--footer-txt);
-}
-
-footer img {
-    width: 3rem;
 }
 
 @media (min-width: 1024px) {
